@@ -21,37 +21,28 @@ window.Urls = @json([
     'login' => route('login')
 ]);
 </script>
-{{--
- 'user' => Auth::user()
-  <!-- jQuery-->
-  <script src="{{ Theme::asset('pub_theme::vendor/jquery/jquery.min.js') }}"></script>
-  <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
-  <script src="{{ Theme::asset('pub_theme::vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <!-- Magnific Popup - Lightbox for the gallery-->
-  <script src="{{ Theme::asset('pub_theme::vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-  <!-- Smooth scroll-->
-  <script src="{{ Theme::asset('pub_theme::vendor/smooth-scroll/smooth-scroll.polyfills.min.js') }}"></script>
-  <!-- Bootstrap Select-->
-  <script src="{{ Theme::asset('pub_theme::vendor/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
-  <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
-  <script src="{{ Theme::asset('pub_theme::vendor/object-fit-images/ofi.min.js') }}"></script>
-  <!-- Swiper Carousel                       -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-  <script src="{{ Theme::asset('pub_theme::dist/js/app.js') }}"></script>
-
-  <!-- Main Theme JS file    -->
-  <script src="{{ Theme::asset('pub_theme::resources/js/svg.js') }}"></script>
-  <script src="{{ Theme::asset('pub_theme::js/theme.js') }}"></script>
-  --}}
 @php
     Theme::add('pub_theme::dist/js/manifest.js',1);
     Theme::add('pub_theme::dist/js/vendor.js',2);
     Theme::add('pub_theme::dist/js/app.js',3);
 
-    Theme::add('pub_theme::resources/js/svg.js');
+    //Theme::add('pub_theme::resources/js/svg.js');
+    Theme::add('pub_theme::assets/build/jquery.fitvids.js');
+    Theme::add('pub_theme::assets/build/infinitescroll.js');
     Theme::add('pub_theme::resources/js/theme.js');
-    Theme::add('theme::js/modal_ajax.js');
-    Theme::add('theme::js/modal_iframe.js');
+
+
+    //Theme::add('theme::js/modal_ajax.js');
+    //Theme::add('theme::js/modal_iframe.js');
 @endphp
   {!! Theme::showScripts(false) !!}
   @stack('scripts')
+
+
+  <!-- Casper scripts -->
+  {{--
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ Theme::asset('pub_theme::assets/build/jquery.fitvids.js') }}"></script>
+  <script type="text/javascript" src="{{ Theme::asset('pub_theme::assets/build/infinitescroll.js') }}"></script>
+  @yield('scripts')
+  --}}

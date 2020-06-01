@@ -1,4 +1,4 @@
-@extends('pub_theme::layouts.master')
+@extends('pub_theme::layouts.app')
 {{--
     ---
     image: /assets/images/blog-cover.jpg
