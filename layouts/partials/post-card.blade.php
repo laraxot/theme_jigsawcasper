@@ -29,7 +29,7 @@
                         {{ $post->siteAuthor }}
                     </div>
                     <div class="static-avatar author-profile-image">
-                        <img src="/assets/images/avatar.png" alt="">
+                        <img src="{{ Theme::asset('pub_theme::assets/images/avatar.png') }}" alt="">
                     </div>
                 </li>
             </ul>
