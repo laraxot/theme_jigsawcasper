@@ -27,8 +27,8 @@ window.Urls = @json([
     Theme::add('pub_theme::dist/js/app.js',3);
 
     //Theme::add('pub_theme::resources/js/svg.js');
-    Theme::add('pub_theme::assets/build/jquery.fitvids.js');
-    Theme::add('pub_theme::assets/build/infinitescroll.js');
+     //    Theme::add('pub_theme::assets/build/jquery.fitvids.js');
+    Theme::add('pub_theme::resources/js/infinitescroll.js');
     Theme::add('pub_theme::resources/js/theme.js');
 
 
