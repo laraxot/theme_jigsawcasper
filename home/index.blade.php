@@ -11,7 +11,7 @@
 				->where('parent_id',0)
 				->orderBy('pos')
 				->get();
-	//ddd($articles);
+	//dddx($articles);
 @endphp
 @section('body')
 

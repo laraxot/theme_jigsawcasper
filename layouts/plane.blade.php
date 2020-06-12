@@ -7,8 +7,9 @@
 
 
 @endphp
-<body {!! isset($body_style)?'style="'.$body_style.'"':'' !!}>
+<body {!! isset($body_style)?'style="'.$body_style.'"':'' !!} class="@yield('body-class', 'home-template')">
 @yield('body')
+
 @section('scripts')
 	@include('pub_theme::layouts.partials.scripts')
 @show

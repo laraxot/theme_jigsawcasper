@@ -11,9 +11,9 @@
 				->where('parent_id',0)
 				->orderBy('pos')
 				->get();
-	//ddd($articles);
+	//dddx($articles);
 @endphp
-@section('body')
+@section('content')
 
     @include('pub_theme::layouts.partials.header',['image'=>'pub_theme::assets/images/blog-cover.jpg'])
 

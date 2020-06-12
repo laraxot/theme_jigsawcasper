@@ -3,6 +3,7 @@
 @php
 //dddx(get_defined_vars());
 $page = $row;
+//dddx($row);
 @endphp
 @section('content')
 
@@ -26,6 +27,7 @@ $page = $row;
                         @endif
                     </section>
                     <h1 class="post-full-title">{{$page->title}}</h1>
+                    <h4 class="post-full-title">{{$page->subtitle}}</h4>
                 </header>
                 @if($page->image)
                     <figure class="post-full-image">
